@@ -1,0 +1,98 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Jonathan P. Spratte
+============================================================
+TEST 1: mixed categories expandably
+============================================================
+============================================================
+\KV_key_no_value_elt:n {a1}\KV_key_no_value_elt:n {a2}\KV_key_value_elt:nn {a3}{b1}\KV_key_value_elt:nn {a4}{b2}
+============================================================
+Key: a1
+NoValue
+Key: a2
+NoValue
+Key: a3
+Value: b1
+Key: a4
+Value: b2
+============================================================
+============================================================
+TEST 2: blank key errors
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================
+============================================================
+TEST 3: multiple equals errors
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================

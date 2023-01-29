@@ -1,0 +1,175 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Joseph Wright
+============================================================
+TEST 1: Making some new messages
+============================================================
+Defining message module/name2 on line ...
+Defining message module/name3 on line ...
+============================================================
+============================================================
+TEST 2: Making some messages using set
+============================================================
+============================================================
+============================================================
+TEST 3: Trying to make new messages which already exist
+============================================================
+! LaTeX Error: Message 'othername' for module 'module' already defined.
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+This is a coding error.
+LaTeX was asked to define a new message called 'othername'
+by the module 'module': this message already exists.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+Defining message module/othername on line ...
+! LaTeX Error: Message 'othername' for module 'module' already defined.
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+This is a coding error.
+LaTeX was asked to define a new message called 'othername'
+by the module 'module': this message already exists.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+Defining message module/othername on line ...
+============================================================
+============================================================
+TEST 4: Issuing fatal messages (without stopping!)
+============================================================
+! Fatal Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text text text
+This is a fatal error: LaTeX will abort.
+! Fatal Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text text 
+This is a fatal error: LaTeX will abort.
+! Fatal Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text  
+This is a fatal error: LaTeX will abort.
+! Fatal Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text   
+This is a fatal error: LaTeX will abort.
+! Fatal Package module Error: text 
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text    
+This is a fatal error: LaTeX will abort.
+============================================================
+============================================================
+TEST 5: Issuing error messages
+============================================================
+! Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text text text
+! Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text text 
+! Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text text  
+! Package module Error: text text
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text text   
+! Package module Error: text 
+For immediate help type H <return>.
+ ...                                              
+l. ...}
+more text    
+============================================================
+============================================================
+TEST 6: Issuing warning messages
+============================================================
+Package module Warning: text text
+Package module Warning: text text
+Package module Warning: text text
+Package module Warning: text text
+Package module Warning: text 
+============================================================
+============================================================
+TEST 7: Issuing info messages
+============================================================
+Package module Info: text text
+Package module Info: text text
+Package module Info: text text
+Package module Info: text text
+Package module Info: text 
+============================================================
+Package module Info: text text
+Package module Info: text \l_test_tl 
+Package module Info: text text
+Package module Info: text \l_test_tl 
+Package module Info: text 
+============================================================
+============================================================
+TEST 8: Issuing log messages
+============================================================
+text text
+text text
+text text
+text text
+text 
+============================================================
+============================================================
+TEST 9: Issuing term messages
+============================================================
+text text
+text text
+text text
+text text
+text 
+============================================================
+============================================================
+TEST 10: "Issuing" none messages
+============================================================
+============================================================
+============================================================
+TEST 11: Redirection of messages: by class
+============================================================
+Package module Warning: text 
+============================================================
+============================================================
+TEST 12: Redirection of messages: by module
+============================================================
+Package module Warning: text 
+============================================================
+============================================================
+TEST 13: Redirection of messages: by name
+============================================================
+Package module Warning: text 
+============================================================
+============================================================
+TEST 14: Simple text commands
+============================================================
+! Package module Error: TEXT on line ...TEXT170TEXT
+(module)                TEXT
+(module)                
+(module)                TEXT
+Type <return> to continue.
+ ...                                              
+l. ...}
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+============================================================

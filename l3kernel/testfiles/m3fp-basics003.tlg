@@ -1,0 +1,137 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+============================================================
+TEST 1: Division special cases
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (inf)/(inf)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (inf)/(-inf)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (-inf)/(inf)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (-inf)/(-inf)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)/(0)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)/(-0)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (-0)/(0)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (-0)/(-0)
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+Expect nan, nan, nan, nan, nan, nan.
+nan
+nan
+nan
+nan
+nan
+nan
+Expect nan, error+nan, error+nan, inf, inf, -inf.
+nan
+nan
+nan
+inf
+inf
+-inf
+Expect nan, error+nan, error+nan, -inf, -inf, inf.
+nan
+nan
+nan
+-inf
+-inf
+inf
+Expect nan, 0, -0, inf, -inf.
+nan
+0
+-0
+inf
+-inf
+Expect nan, -0, 0, -inf, inf.
+nan
+-0
+0
+-inf
+inf
+Expect nan, +0, -0, +0, error+nan, error+nan.
+nan
+0
+-0
+0
+nan
+nan
+Expect nan, -0, +0, -0, error+nan, error+nan.
+nan
+-0
+0
+-0
+nan
+nan
+============================================================
+============================================================
+TEST 2: Division
+============================================================
+8.164965809277261e-4
+12.24744871391589
+9.12870929175277e-4
+10.95445115010332
+9.354143466934855e-4
+1632993161855452
+2.23606797749979e19
+7.071067811865475e-21
+5.345224838248487e-15
+0.3529411764705882
+0.1249999988609375
+0.285582041194168
+0.5760273266196108
+22743.09300705097
+0.02822625829631762
+============================================================

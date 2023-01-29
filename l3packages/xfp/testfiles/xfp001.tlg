@@ -1,0 +1,45 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+Defining \g__hook_package/xfp/before_code_prop on line ...
+(xfp.sty
+Package: xfp ....-..-.. L3 Floating point unit
+)
+Defining \g__hook_package/xfp/after_code_prop on line ...
+============================================================
+TEST 1: fpeval
+============================================================
+|3.25476989|
+|0.0000000000000002384626433832795|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Unknown fp word foobar.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation fp_to_decimal(nan)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|0|
+============================================================
+============================================================
+TEST 2: inteval
+============================================================
+|125476991|
+|-13|
+! Missing number, treated as zero.
+<to be read again> 
+                   f
+l. ...  }
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+|0foobar\__int_eval_end: |
+============================================================

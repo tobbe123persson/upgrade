@@ -1,0 +1,59 @@
+%
+% Copyright (C) 2009-2012,2014,2015,2017,2018,2022 LaTeX Project
+%
+\documentclass{minimal}
+\input{regression-test}
+\RequirePackage[enable-debug]{expl3}
+\ExplSyntaxOn
+\debug_on:n { check-declarations , deprecation , log-functions }
+\ExplSyntaxOff
+\RequirePackage{xparse}
+\begin{document}
+\START
+\AUTHOR{Joseph Wright}
+\ExplSyntaxOn
+\OMIT
+\cs_new:Npn \TYPELONG #1 {
+  \if_meaning:w #1 \par
+    \TYPE { <<par>> }
+  \else:
+    \TYPE { (#1) }
+  \fi:
+}
+\TIMO
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\TEST{More~variation~of~type~with~valid~arguments}{
+  \DeclareDocumentCommand \foo { g o m } { \TYPE { (#1) (#2) (#3) } }
+  \foo a b c
+  \foo {text} b c
+  \foo ~{text} [opt] {text}
+  \DeclareDocumentCommand \foo { m m G{default} }
+    { \TYPE { (#1) (#2) (#3) } }
+  \foo d e f
+  \foo d e {text}
+  \foo d e~{text}
+  \DeclareDocumentCommand \foo { l m m } { \TYPE { (#1) (#2) (#3) } }
+  \foo g~ {h} i
+  \DeclareDocumentCommand \foo { u{stop} m m }
+    { \TYPE { (#1) (#2) (#3) } }
+  \foo jstophere
+  \foo stophere
+}
+
+\TEST{Variation~of~type~with~invalid~arguments}{
+  \DeclareDocumentCommand \foo { g o m } { \TYPE { (#1) (#2) (#3) } }
+  \foo {\par} b c
+  \DeclareDocumentCommand \foo { m m G{default} }
+    { \TYPE { (#1) (#2) (#3) } }
+  \foo d e {\par}
+  \DeclareDocumentCommand \foo { l m m } { \TYPE { (#1) (#2) (#3) } }
+  \foo g~ h i \par
+  \DeclareDocumentCommand \foo { u{stop} m m }
+    { \TYPE { (#1) (#2) (#3) } }
+  \foo j \par
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\END

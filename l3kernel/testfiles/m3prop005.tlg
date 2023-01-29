@@ -1,0 +1,147 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+============================================================
+TEST 1: prop from_keyval
+============================================================
+The property list \l_tmpa_prop contains the pairs (without outer braces):
+>  {\a }  =>  {b}
+>  {\c }  =>  { \d =e }
+>  {}  =>  {,}
+>  {=}  =>  {}.
+The property list \g_tmpa_prop contains the pairs (without outer braces):
+>  {\a }  =>  {b}
+>  {\c }  =>  { \d =e }
+>  {}  =>  {,}
+>  {=}  =>  {}.
+Defining \c_A_prop on line ...
+The property list \c_A_prop contains the pairs (without outer braces):
+>  {\a }  =>  {Z}
+>  {\c }  =>  { \d =e }
+>  {}  =>  {,}
+>  {=}  =>  {}.
+============================================================
+============================================================
+TEST 2: prop from_keyval invalid
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! LaTeX Error: Missing '=' in '=' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+! LaTeX Error: Missing '=' in '' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+The property list \l_tmpa_prop is empty
+> .
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! LaTeX Error: Missing '=' in '=' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+! LaTeX Error: Missing '=' in '' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+The property list \g_tmpa_prop is empty
+> .
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! LaTeX Error: Missing '=' in '=' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+! LaTeX Error: Missing '=' in '' (in '..._keyval:Nn')
+Type <return> to continue.
+ ...                                              
+l. ...  }
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+Defining \c_B_prop on line ...
+The property list \c_B_prop is empty
+> .
+============================================================
+============================================================
+TEST 3: prop_concat
+============================================================
+TRUE
+The property list \g_tmpa_prop contains the pairs (without outer braces):
+>  {\a }  =>  {c}
+>  {\c }  =>  { \D =E }
+>  {}  =>  {?}
+>  {=}  =>  {}
+>  {x}  =>  {y}.
+============================================================
+============================================================
+TEST 4: prop_put_from_keyval
+============================================================
+TRUE
+The property list \g_tmpa_prop contains the pairs (without outer braces):
+>  {}  =>  {}
+>  {\a }  =>  {c}
+>  {\c }  =>  {=}
+>  { \a }  =>  {c}.
+The property list \l_tmpa_prop is empty
+> .
+============================================================

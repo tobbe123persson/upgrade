@@ -1,0 +1,203 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+============================================================
+TEST 1: fp flags
+============================================================
+FALSE
+TRUE
+FALSE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)*(inf)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+nan
+TRUE
+FALSE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation fp_to_decimal(nan)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+0
+TRUE
+============================================================
+============================================================
+TEST 2: fp_trap:nn error recovery
+============================================================
+! LaTeX Error: The FPU exception 'foo' is not known: that trap will never be
+(LaTeX)        triggered.
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The only exceptions to which traps can be attached are
+    * invalid_operation
+    * division_by_zero
+    * overflow
+    * underflow
+! LaTeX Error: The FPU trap type 'bar' is not known.
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+The trap type must be one of
+    * error
+    * flag
+    * none
+============================================================
+============================================================
+TEST 3: fp_trap:nn invalid operation
+============================================================
+FALSE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)*(inf)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+nan
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)*(inf)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+nan
+TRUE
+nan
+TRUE
+nan
+FALSE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Invalid operation (0)*(inf)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+nan
+TRUE
+============================================================
+============================================================
+TEST 4: fp_trap:nn division by zero
+============================================================
+FALSE
+inf
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Division by zero in (1)/(0)
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+inf
+TRUE
+inf
+TRUE
+inf
+FALSE
+inf
+TRUE
+============================================================
+============================================================
+TEST 5: fp_trap:nn overflow
+============================================================
+inf
+TRUE
+inf
+FALSE
+inf
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: 1e19998 overflowed to inf.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+inf
+TRUE
+inf
+TRUE
+inf
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: 1e19998 overflowed to inf.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+inf
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: An overflow occurred.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+inf
+TRUE
+============================================================
+============================================================
+TEST 6: fp_trap:nn underflow
+============================================================
+0
+TRUE
+0
+FALSE
+0
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: 1e-19998 underflowed to 0.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+0
+TRUE
+0
+TRUE
+0
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: 1e-19998 underflowed to 0.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+0
+TRUE
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: An underflow occurred.
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+0
+TRUE
+============================================================

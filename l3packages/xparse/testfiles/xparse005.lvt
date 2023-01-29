@@ -1,0 +1,45 @@
+%
+% Copyright (C) 2018,2019,2022 LaTeX Project
+%
+
+\documentclass{minimal}
+\input{regression-test}
+
+\RequirePackage[enable-debug]{expl3}
+\ExplSyntaxOn
+\debug_on:n { check-declarations , deprecation , log-functions }
+\ExplSyntaxOff
+\RequirePackage{xparse}
+
+\begin{document}
+
+\START
+\AUTHOR{Bruno Le Floch}
+
+\ExplSyntaxOn
+
+\TEST { Invalid~'!' }
+  {
+    \NewDocumentCommand { \testA } { ! u{.} } { }
+  }
+
+% The rest of this test tests all of xparse's messages.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\TEST { Invalid~signatures }
+  {
+    \DeclareExpandableDocumentCommand { \testA } { u } { } { }
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\TEST { Invalid~signatures~for~expandable~commands }
+  {
+    \NewExpandableDocumentCommand { \testA } { g } { }
+    \NewExpandableDocumentCommand { \testA } { o l } { }
+    \NewExpandableDocumentCommand { \testA } { o u { + } } { }
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\END

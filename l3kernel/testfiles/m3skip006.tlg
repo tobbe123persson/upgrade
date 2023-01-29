@@ -1,0 +1,81 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+============================================================
+TEST 1: dim_step_function
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Zero step size for function \TYPE .
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+0.0pt0.1pt0.20001pt0.30002pt0.40002pt0.50003pt0.60004pt0.70004pt0.80005pt0.90005pt
+1.0pt0.9pt0.79999pt0.69998pt0.59998pt0.49997pt0.39996pt0.29996pt0.19995pt0.09995pt
+============================================================
+============================================================
+TEST 2: dim_step_inline
+============================================================
+0.0pt
+0.1pt
+0.20001pt
+0.30002pt
+0.40002pt
+0.50003pt
+0.60004pt
+0.70004pt
+0.80005pt
+0.90005pt
+1.0pt
+0.9pt
+0.79999pt
+0.69998pt
+0.59998pt
+0.49997pt
+0.39996pt
+0.29996pt
+0.19995pt
+0.09995pt
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Zero step size for function \__dim_map_1:w .
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================
+============================================================
+TEST 3: dim_step_variable
+============================================================
+0.0pt##
+0.1pt##
+0.20001pt##
+0.30002pt##
+0.40002pt##
+0.50003pt##
+0.60004pt##
+0.70004pt##
+0.80005pt##
+0.90005pt##
+1.0pt
+0.9pt
+0.79999pt
+0.69998pt
+0.59998pt
+0.49997pt
+0.39996pt
+0.29996pt
+0.19995pt
+0.09995pt
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Zero step size for function \__dim_map_1:w .
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================

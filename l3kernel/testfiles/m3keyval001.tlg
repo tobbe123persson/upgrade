@@ -1,0 +1,69 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Will Robertson
+============================================================
+TEST 1: List parsing
+============================================================
+KEY NO VAL: "a"
+KEY NO VAL: "b"
+KEY NO VAL: "c"
+KEY NO VAL: "d"
+KEY NO VAL: "e"
+KEY NO VAL: "f "
+KEY NO VAL: "{g}"
+KEY NO VAL: "a"
+KEY NO VAL: "b"
+KEY NO VAL: "c"
+KEY NO VAL: "d"
+KEY NO VAL: "e"
+KEY NO VAL: "f "
+KEY NO VAL: "{g}"
+KEY: "a" VAL: "1"
+KEY: "b" VAL: "2"
+KEY: "c" VAL: "3"
+KEY: "d" VAL: "4"
+KEY: "e" VAL: "{5}"
+KEY: "a" VAL: " 1 "
+KEY: "b" VAL: " 2 "
+KEY: "c" VAL: " 3 "
+KEY: "d" VAL: " 4 "
+KEY: "e" VAL: "{5}"
+KEY: "f" VAL: "{6}"
+KEY: "a" VAL: "1"
+KEY: "b" VAL: "2"
+KEY: "c" VAL: "3"
+KEY: "d" VAL: "4"
+KEY: "e" VAL: "{5}"
+KEY: "a" VAL: " 1 "
+KEY: "b" VAL: " 2 "
+KEY: "c" VAL: " 3 "
+KEY: "d" VAL: " 4 "
+KEY: "e" VAL: "{5}"
+KEY: "f" VAL: "{6}"
+============================================================
+============================================================
+TEST 2: check for errors
+============================================================
+============================================================
+KEY NO VAL: "a"
+============================================================
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Misplaced '=' in key-value input on line ...
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Blank key name in key-value input on line ...
+l. ...}
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+============================================================
+============================================================

@@ -1,0 +1,136 @@
+This is a generated file for the LaTeX (2e + expl3) validation system.
+Don't change this file in any respect.
+Author: Bruno Le Floch
+============================================================
+TEST 1: flag_new
+============================================================
+Defining \flag A on line ...
+\long macro:#1;->\exp_after:wN \use_none:n \cs:w flag A #1\cs_end: 
+\long macro:#1;->\exp_after:wN \use_none:n \cs:w flag A #1\cs_end: 
+! LaTeX Error: Control sequence \flag A already defined.
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+This is a coding error.
+LaTeX has been asked to create a new control sequence '\flag A' but this name
+has already been used elsewhere.
+The current meaning is:
+  \long macro:#1;->\exp_after:wN \use_none:n \cs:w flag A #1\cs_end: 
+Defining \flag A on line ...
+Defining \flag B on line ...
+============================================================
+============================================================
+TEST 2: raise, test, height
+============================================================
+F 0 undefined undefined undefined 
+T 1 \relax undefined undefined 
+T 2 \relax \relax undefined 
+F 0 undefined undefined undefined 
+============================================================
+============================================================
+TEST 3: zero
+============================================================
+F 0 undefined undefined undefined 
+T 1 \relax undefined undefined 
+F 0 undefined undefined undefined 
+T 10 \relax \relax \relax 
+F 0 undefined undefined undefined 
+============================================================
+============================================================
+TEST 4: show, log
+============================================================
+> flag C height=1.
+<recently read> }
+l. ...  }
+> flag C height=3.
+! LaTeX Error: Variable \flag other undefined.
+For immediate help type H <return>.
+ ...                                              
+l. ...  }
+This is a coding error.
+LaTeX has been asked to show a variable \flag other, but this has not been
+defined yet.
+============================================================
+============================================================
+TEST 5: undefined
+============================================================
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|\flag other 0;|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|\flag other 0;|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|0|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|F|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+||
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|F|
+! Use of \??? doesn't match its definition.
+<argument> \???  
+                 ! LaTeX Error: Erroneous variable flag other used!
+l. ...  }
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+|F|
+============================================================
